@@ -27,6 +27,7 @@
 		D0A5A7C11A4648590076EC41 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A5A7C01A4648590076EC41 /* SystemConfiguration.framework */; };
 		D0A5A7C31A46485E0076EC41 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A5A7C21A46485E0076EC41 /* libz.dylib */; };
 		D0A5A7C51A4648660076EC41 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A5A7C41A4648660076EC41 /* libsqlite3.dylib */; };
+		D0A5A7C71A4654660076EC41 /* API.config.h in Resources */ = {isa = PBXBuildFile; fileRef = D0A5A7C61A4654660076EC41 /* API.config.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		D0A5A7C01A4648590076EC41 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D0A5A7C21A46485E0076EC41 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		D0A5A7C41A4648660076EC41 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		D0A5A7C61A4654660076EC41 /* API.config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.config.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 		D0A5A7841A4617640076EC41 /* easy find 2 */ = {
 			isa = PBXGroup;
 			children = (
+				D0A5A7C61A4654660076EC41 /* API.config.h */,
 				D0A5A7891A4617640076EC41 /* AppDelegate.h */,
 				D0A5A78A1A4617640076EC41 /* AppDelegate.m */,
 				D0A5A78C1A4617640076EC41 /* ViewController.h */,
@@ -259,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0A5A7C71A4654660076EC41 /* API.config.h in Resources */,
 				D0A5A7911A4617640076EC41 /* Main.storyboard in Resources */,
 				D0A5A7961A4617640076EC41 /* LaunchScreen.xib in Resources */,
 				D0A5A7931A4617640076EC41 /* Images.xcassets in Resources */,
