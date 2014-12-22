@@ -35,6 +35,8 @@
 		D0A5A7D71A46602B0076EC41 /* usernamefield@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A5A7D41A46602B0076EC41 /* usernamefield@2x.png */; };
 		D0A5A7D81A46602B0076EC41 /* usernamefield@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A5A7D51A46602B0076EC41 /* usernamefield@3x.png */; };
 		D0A5A8111A47ECEA0076EC41 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A5A8101A47ECEA0076EC41 /* FeedViewController.m */; };
+		D0A5A8151A47F2140076EC41 /* gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A5A8141A47F2140076EC41 /* gear@2x.png */; };
+		D0A5A8181A47F2B90076EC41 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A5A8171A47F2B90076EC41 /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,9 @@
 		D0A5A7D51A46602B0076EC41 /* usernamefield@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "usernamefield@3x.png"; sourceTree = "<group>"; };
 		D0A5A80F1A47ECEA0076EC41 /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
 		D0A5A8101A47ECEA0076EC41 /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
+		D0A5A8141A47F2140076EC41 /* gear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gear@2x.png"; sourceTree = "<group>"; };
+		D0A5A8161A47F2B90076EC41 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		D0A5A8171A47F2B90076EC41 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +149,8 @@
 				D0A5A78D1A4617640076EC41 /* ViewController.m */,
 				D0A5A80F1A47ECEA0076EC41 /* FeedViewController.h */,
 				D0A5A8101A47ECEA0076EC41 /* FeedViewController.m */,
+				D0A5A8161A47F2B90076EC41 /* SettingsViewController.h */,
+				D0A5A8171A47F2B90076EC41 /* SettingsViewController.m */,
 				D0A5A78F1A4617640076EC41 /* Main.storyboard */,
 				D0A5A7921A4617640076EC41 /* Images.xcassets */,
 				D0A5A7941A4617640076EC41 /* LaunchScreen.xib */,
@@ -203,6 +210,7 @@
 		D0A5A7C81A465C550076EC41 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D0A5A8141A47F2140076EC41 /* gear@2x.png */,
 				D0A5A7D31A46602B0076EC41 /* usernamefield.png */,
 				D0A5A7D41A46602B0076EC41 /* usernamefield@2x.png */,
 				D0A5A7D51A46602B0076EC41 /* usernamefield@3x.png */,
@@ -298,6 +306,7 @@
 				D0A5A7D21A465DEF0076EC41 /* mapblurred@3x.png in Resources */,
 				D0A5A7D11A465DEF0076EC41 /* mapblurred@2x.png in Resources */,
 				D0A5A7C71A4654660076EC41 /* API.config.h in Resources */,
+				D0A5A8151A47F2140076EC41 /* gear@2x.png in Resources */,
 				D0A5A7911A4617640076EC41 /* Main.storyboard in Resources */,
 				D0A5A7D71A46602B0076EC41 /* usernamefield@2x.png in Resources */,
 				D0A5A7D81A46602B0076EC41 /* usernamefield@3x.png in Resources */,
@@ -323,6 +332,7 @@
 			files = (
 				D0A5A78E1A4617640076EC41 /* ViewController.m in Sources */,
 				D0A5A78B1A4617640076EC41 /* AppDelegate.m in Sources */,
+				D0A5A8181A47F2B90076EC41 /* SettingsViewController.m in Sources */,
 				D0A5A8111A47ECEA0076EC41 /* FeedViewController.m in Sources */,
 				D0A5A7881A4617640076EC41 /* main.m in Sources */,
 			);

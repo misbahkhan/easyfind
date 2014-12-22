@@ -1,32 +1,31 @@
 //
-//  FeedViewController.m
+//  SettingsViewController.m
 //  easy find 2
 //
 //  Created by Misbah Khan on 12/21/14.
 //  Copyright (c) 2014 Misbah Khan. All rights reserved.
 //
 
-#import "FeedViewController.h"
+#import "SettingsViewController.h"
 #import <Parse/Parse.h>
 
-@interface FeedViewController ()
+@interface SettingsViewController ()
 
 @end
 
-@implementation FeedViewController
-
-- (void) viewDidAppear:(BOOL)animated
-{
-    if (![PFUser currentUser]) {
-        [self.navigationController performSegueWithIdentifier:@"login" sender:self]; 
-    }
-}
+@implementation SettingsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0 green:0.47 blue:1 alpha:1]];
     [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil]];
+    
+    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]]; 
     // Do any additional setup after loading the view.
+}
+
+- (IBAction)logout:(id)sender {
+    [PFUser logOut];
+    [self.navigationController performSegueWithIdentifier:@"login" sender:self];
 }
 
 - (void)didReceiveMemoryWarning {

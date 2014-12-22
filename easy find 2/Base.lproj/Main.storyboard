@@ -117,32 +117,99 @@
                         <outlet property="error" destination="7QW-W9-rvd" id="9US-xd-aXb"/>
                         <outlet property="password" destination="V1j-FK-9p3" id="Pp4-8u-jtN"/>
                         <outlet property="username" destination="99g-ah-UQj" id="T8V-fC-BtW"/>
-                        <segue destination="v3W-wE-HKp" kind="presentation" identifier="in" id="YDL-oQ-NQ0"/>
+                        <segue destination="RhM-VD-9fh" kind="presentation" identifier="in" modalTransitionStyle="crossDissolve" animates="NO" id="sJ3-BB-dBe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="295" y="349"/>
         </scene>
-        <!--Feed View Controller-->
-        <scene sceneID="L5R-pt-P4O">
+        <!--Navigation Controller-->
+        <scene sceneID="1u0-u9-lkA">
             <objects>
-                <viewController storyboardIdentifier="feed" id="v3W-wE-HKp" customClass="FeedViewController" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="feed" id="RhM-VD-9fh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FeD-SS-VOX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXf-jt-bYg" kind="relationship" relationship="rootViewController" id="t8a-UA-ekE"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="login" modalTransitionStyle="crossDissolve" animates="NO" id="0YC-Fg-xBZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rPP-LG-oZY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047" y="349"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="5lK-ml-f6t">
+            <objects>
+                <viewController id="ThW-8t-JUj" customClass="SettingsViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="yso-Z1-1nQ"/>
-                        <viewControllerLayoutGuide type="bottom" id="DNu-0h-lyF"/>
+                        <viewControllerLayoutGuide type="top" id="B5E-cF-OYy"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zhw-U8-1Js"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="fga-Pc-WiL">
+                    <view key="view" contentMode="scaleToFill" id="4TA-k6-SWn">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TN1-B7-JT2">
+                                <rect key="frame" x="276" y="550" width="49" height="30"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logout:" destination="ThW-8t-JUj" eventType="touchUpInside" id="sWw-2O-D4n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="TN1-B7-JT2" secondAttribute="centerX" constant="-0.5" id="VIn-t3-8KC"/>
+                            <constraint firstItem="Zhw-U8-1Js" firstAttribute="top" secondItem="TN1-B7-JT2" secondAttribute="bottom" constant="20" id="owM-R8-0ru"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="BAh-tj-RRn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9NX-0x-HhY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1762" y="-384"/>
+        </scene>
+        <!--Projects-->
+        <scene sceneID="YDw-UJ-GQV">
+            <objects>
+                <viewController id="vXf-jt-bYg" customClass="FeedViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Prg-Wj-VLc"/>
+                        <viewControllerLayoutGuide type="bottom" id="70n-Ob-LQ6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pMW-Em-Lsk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="6y3-5J-rVK">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Projects" id="hRq-BF-Sv8">
+                        <barButtonItem key="rightBarButtonItem" image="gear.png" style="plain" id="XHL-al-KHk">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="ThW-8t-JUj" kind="show" id="rUn-8g-20j"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nkS-nQ-aoR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vab-rw-CSw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1035" y="363"/>
+            <point key="canvasLocation" x="1733" y="349"/>
         </scene>
     </scenes>
     <resources>
+        <image name="gear.png" width="25" height="25"/>
         <image name="mapblurred.png" width="1002" height="586"/>
         <image name="usernamefield.png" width="513" height="82"/>
     </resources>
