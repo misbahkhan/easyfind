@@ -18,6 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="mapblurred.png" translatesAutoresizingMaskIntoConstraints="NO" id="nGh-SW-Gn4">
+                                <rect key="frame" x="-93" y="-156" width="746" height="650"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nGh-SW-Gn4" secondAttribute="height" multiplier="373:325" id="wJJ-ey-1Fx"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="EasyFind" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lk4-zs-rIU">
                                 <rect key="frame" x="225" y="111" width="150" height="49"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
@@ -88,12 +94,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="mapblurred.png" translatesAutoresizingMaskIntoConstraints="NO" id="nGh-SW-Gn4">
-                                <rect key="frame" x="-93" y="-156" width="746" height="650"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="nGh-SW-Gn4" secondAttribute="height" multiplier="373:325" id="wJJ-ey-1Fx"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -123,10 +123,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Feed View Controller-->
         <scene sceneID="L5R-pt-P4O">
             <objects>
-                <viewController id="v3W-wE-HKp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="feed" id="v3W-wE-HKp" customClass="FeedViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yso-Z1-1nQ"/>
                         <viewControllerLayoutGuide type="bottom" id="DNu-0h-lyF"/>

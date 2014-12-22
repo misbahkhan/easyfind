@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
 #import "API.config.h"
+#import "FeedViewController.h"
 
 @interface AppDelegate ()
 
@@ -29,6 +30,11 @@
                                                                              categories:nil];
     [application registerUserNotificationSettings:settings];
     [application registerForRemoteNotifications];
+    
+    if ([PFUser currentUser]) {
+        FeedViewController *feed = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"feed"];
+        self.window.rootViewController = feed;
+    }
     
     return YES;
 }

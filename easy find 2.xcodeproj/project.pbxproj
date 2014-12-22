@@ -34,6 +34,7 @@
 		D0A5A7D61A46602B0076EC41 /* usernamefield.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A5A7D31A46602B0076EC41 /* usernamefield.png */; };
 		D0A5A7D71A46602B0076EC41 /* usernamefield@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A5A7D41A46602B0076EC41 /* usernamefield@2x.png */; };
 		D0A5A7D81A46602B0076EC41 /* usernamefield@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A5A7D51A46602B0076EC41 /* usernamefield@3x.png */; };
+		D0A5A8111A47ECEA0076EC41 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A5A8101A47ECEA0076EC41 /* FeedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,8 @@
 		D0A5A7D31A46602B0076EC41 /* usernamefield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usernamefield.png; sourceTree = "<group>"; };
 		D0A5A7D41A46602B0076EC41 /* usernamefield@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "usernamefield@2x.png"; sourceTree = "<group>"; };
 		D0A5A7D51A46602B0076EC41 /* usernamefield@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "usernamefield@3x.png"; sourceTree = "<group>"; };
+		D0A5A80F1A47ECEA0076EC41 /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
+		D0A5A8101A47ECEA0076EC41 /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,8 @@
 				D0A5A78A1A4617640076EC41 /* AppDelegate.m */,
 				D0A5A78C1A4617640076EC41 /* ViewController.h */,
 				D0A5A78D1A4617640076EC41 /* ViewController.m */,
+				D0A5A80F1A47ECEA0076EC41 /* FeedViewController.h */,
+				D0A5A8101A47ECEA0076EC41 /* FeedViewController.m */,
 				D0A5A78F1A4617640076EC41 /* Main.storyboard */,
 				D0A5A7921A4617640076EC41 /* Images.xcassets */,
 				D0A5A7941A4617640076EC41 /* LaunchScreen.xib */,
@@ -318,6 +323,7 @@
 			files = (
 				D0A5A78E1A4617640076EC41 /* ViewController.m in Sources */,
 				D0A5A78B1A4617640076EC41 /* AppDelegate.m in Sources */,
+				D0A5A8111A47ECEA0076EC41 /* FeedViewController.m in Sources */,
 				D0A5A7881A4617640076EC41 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
