@@ -28,6 +28,12 @@
 		D0A5A7C31A46485E0076EC41 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A5A7C21A46485E0076EC41 /* libz.dylib */; };
 		D0A5A7C51A4648660076EC41 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A5A7C41A4648660076EC41 /* libsqlite3.dylib */; };
 		D0A5A7C71A4654660076EC41 /* API.config.h in Resources */ = {isa = PBXBuildFile; fileRef = D0A5A7C61A4654660076EC41 /* API.config.h */; };
+		D0A5A7D01A465DEF0076EC41 /* mapblurred@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A5A7CD1A465DEF0076EC41 /* mapblurred@1x.png */; };
+		D0A5A7D11A465DEF0076EC41 /* mapblurred@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A5A7CE1A465DEF0076EC41 /* mapblurred@2x.png */; };
+		D0A5A7D21A465DEF0076EC41 /* mapblurred@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A5A7CF1A465DEF0076EC41 /* mapblurred@3x.png */; };
+		D0A5A7D61A46602B0076EC41 /* usernamefield.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A5A7D31A46602B0076EC41 /* usernamefield.png */; };
+		D0A5A7D71A46602B0076EC41 /* usernamefield@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A5A7D41A46602B0076EC41 /* usernamefield@2x.png */; };
+		D0A5A7D81A46602B0076EC41 /* usernamefield@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A5A7D51A46602B0076EC41 /* usernamefield@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +74,12 @@
 		D0A5A7C21A46485E0076EC41 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		D0A5A7C41A4648660076EC41 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		D0A5A7C61A4654660076EC41 /* API.config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.config.h; sourceTree = "<group>"; };
+		D0A5A7CD1A465DEF0076EC41 /* mapblurred@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapblurred@1x.png"; sourceTree = "<group>"; };
+		D0A5A7CE1A465DEF0076EC41 /* mapblurred@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapblurred@2x.png"; sourceTree = "<group>"; };
+		D0A5A7CF1A465DEF0076EC41 /* mapblurred@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapblurred@3x.png"; sourceTree = "<group>"; };
+		D0A5A7D31A46602B0076EC41 /* usernamefield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usernamefield.png; sourceTree = "<group>"; };
+		D0A5A7D41A46602B0076EC41 /* usernamefield@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "usernamefield@2x.png"; sourceTree = "<group>"; };
+		D0A5A7D51A46602B0076EC41 /* usernamefield@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "usernamefield@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +142,7 @@
 				D0A5A78F1A4617640076EC41 /* Main.storyboard */,
 				D0A5A7921A4617640076EC41 /* Images.xcassets */,
 				D0A5A7941A4617640076EC41 /* LaunchScreen.xib */,
+				D0A5A7C81A465C550076EC41 /* Images */,
 				D0A5A7AF1A4648060076EC41 /* Frameworks */,
 				D0A5A7851A4617640076EC41 /* Supporting Files */,
 			);
@@ -182,6 +195,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D0A5A7C81A465C550076EC41 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D0A5A7D31A46602B0076EC41 /* usernamefield.png */,
+				D0A5A7D41A46602B0076EC41 /* usernamefield@2x.png */,
+				D0A5A7D51A46602B0076EC41 /* usernamefield@3x.png */,
+				D0A5A7CD1A465DEF0076EC41 /* mapblurred@1x.png */,
+				D0A5A7CE1A465DEF0076EC41 /* mapblurred@2x.png */,
+				D0A5A7CF1A465DEF0076EC41 /* mapblurred@3x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -231,6 +257,7 @@
 				TargetAttributes = {
 					D0A5A7811A4617640076EC41 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = T5X2X383ZA;
 					};
 					D0A5A79A1A4617640076EC41 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -262,8 +289,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0A5A7D61A46602B0076EC41 /* usernamefield.png in Resources */,
+				D0A5A7D21A465DEF0076EC41 /* mapblurred@3x.png in Resources */,
+				D0A5A7D11A465DEF0076EC41 /* mapblurred@2x.png in Resources */,
 				D0A5A7C71A4654660076EC41 /* API.config.h in Resources */,
 				D0A5A7911A4617640076EC41 /* Main.storyboard in Resources */,
+				D0A5A7D71A46602B0076EC41 /* usernamefield@2x.png in Resources */,
+				D0A5A7D81A46602B0076EC41 /* usernamefield@3x.png in Resources */,
+				D0A5A7D01A465DEF0076EC41 /* mapblurred@1x.png in Resources */,
 				D0A5A7961A4617640076EC41 /* LaunchScreen.xib in Resources */,
 				D0A5A7931A4617640076EC41 /* Images.xcassets in Resources */,
 			);
@@ -409,6 +442,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/easy",
@@ -419,6 +454,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -426,6 +462,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/easy",
@@ -436,6 +474,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
