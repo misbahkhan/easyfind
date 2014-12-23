@@ -10,7 +10,8 @@
 #import <Parse/Parse.h>
 
 @interface FeedViewController ()
-
+@property (strong, nonatomic) IBOutlet UITableView *table;
+@property (nonatomic, strong) UIRefreshControl *refresh;
 @end
 
 @implementation FeedViewController
@@ -26,7 +27,20 @@
     [super viewDidLoad];
     [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0 green:0.47 blue:1 alpha:1]];
     [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil]];
+    _refresh = [[UIRefreshControl alloc] init];
+    [_refresh addTarget:self action:@selector(refreshtable) forControlEvents:UIControlEventValueChanged];
+    [_table addSubview:_refresh];
     // Do any additional setup after loading the view.
+}
+
+- (void) refreshtable
+{
+    [_refresh endRefreshing]; 
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 0;
 }
 
 - (void)didReceiveMemoryWarning {
