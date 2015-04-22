@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddProjectViewController : UIViewController
+@interface AddProjectViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate, UITextFieldDelegate>
 
 @end

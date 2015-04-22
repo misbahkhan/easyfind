@@ -9,7 +9,9 @@
 #import "SettingsViewController.h"
 #import <Parse/Parse.h>
 
-@interface SettingsViewController ()
+@interface SettingsViewController (){
+    IBOutlet UILabel *username;
+}
 
 @end
 
@@ -17,9 +19,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil]];
+
+    username.text = [PFUser currentUser][@"username"]; 
     
-    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]]; 
     // Do any additional setup after loading the view.
 }
 
